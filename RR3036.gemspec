@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = RR3036::VERSION
   spec.authors       = ["Sascha Willuweit"]
   spec.email         = ["s@rprojekt.org"]
-  spec.description   = %q{RR3036 RFID (ISO 15963, ISO 14443A+B) USB connector written in Ruby.}
-  spec.summary       = %q{RR3036 RFID (ISO 15963, ISO 14443A+B) USB connector written in Ruby.}
+  spec.description   = %q{RR3036 RFID (ISO 15963, ISO 14443A+B) connector written in Ruby.}
+  spec.summary       = %q{RR3036 RFID (ISO15963, 14443A+B) reader/writer written in Ruby. Available at http://www.rfid-in-china.com/2008-09-02/products_detail_2133.html (e.g. HF RFID Reader - 02) and http://www.rfidshop.com.hk/ (e.g. HF-TP-RW-USB-D1).}
   spec.homepage      = "https://github.com/545ch4/RR3036"
   spec.license       = "MIT"
 
