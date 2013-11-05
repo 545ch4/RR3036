@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 	$ con = RR3036::Connection.new(<path_to_your_serial_line_device>, :mode => :iso15693)
-	$ con.dump_iso15693_inventory
+	$ con.dump_iso15693
 
 
 ## Contributing
