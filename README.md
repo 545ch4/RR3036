@@ -1,6 +1,6 @@
 # RR3036
 
-RR3036 RFID (ISO15963, 14443A+B) reader/writer written in Ruby. Available at http://www.rfid-in-china.com/2008-09-02/products_detail_2133.html (e.g. HF RFID Reader - 02) and http://www.rfidshop.com.hk/ (e.g. HF-TP-RW-USB-D1)
+RR3036 RFID (ISO/IEC 15693, ISO/IEC 14443A+B) reader/writer written in Ruby. Available at http://www.rfid-in-china.com/2008-09-02/products_detail_2133.html (e.g. HF RFID Reader - 02) and http://www.rfidshop.com.hk/ (e.g. HF-TP-RW-USB-D1).
 
 
 ## Installation
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-	$ con = RR3036::Connection.new(<path_to_your_serial_line_device>, :mode => :iso15693)
+	$ con = RR3036::Connection.new(<path_to_your_serial_line_device>)
 	$ con.dump_iso15693
 
 

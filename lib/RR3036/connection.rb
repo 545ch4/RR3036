@@ -1,7 +1,7 @@
 # coding: utf-8
 require "serialport"
 
-# RR3036 RFID (ISO15963, 14443A+B) reader/writer.
+# RR3036 RFID (ISO/IEC 15693, ISO/IEC 14443A+B) reader/writer.
 #
 # Author::    Sascha Willuweit  (s@rprojekt.org)
 # Copyright:: Copyright (c) 2013 Sascha Willuweit
