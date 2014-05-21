@@ -109,7 +109,7 @@ module RR3036
 			response[:data] = port.read(response[:len] - 4).bytes.pack('C*')
 			response[:crc] = port.read(2).bytes.pack('C*')
 			response[:crc_calc] = crc([response[:len], response[:addr], response[:status]] + response[:data].bytes).pack('C*')
-			if response[:status] > 0 && !continue_on_errors.include?(response[:status])
+			if response[:status] > 0 && !options[:continue_on_errors].include?(response[:status])
 				puts "Error: " << (ERROR_MSG[response[:status]][:msg].nil? ? 'UNKNOWN ERROR' : (ERROR_MSG[response[:status]][:msg] + ' ' + ERROR_MSG[response[:status]][:description]) + ' ' + response[:data].inspect) << (ERROR_MSG[response[:status]] && ERROR_MSG[response[:status]][:further_descriptions] && !response[:data].empty? && ERROR_MSG[response[:status]][:further_descriptions][response[:data]] ? ERROR_MSG[response[:status]][:further_descriptions][response[:data]] : '')
 			end
 			if response[:crc] != response[:crc_calc] && !options[:dont_report_crc_failures]
