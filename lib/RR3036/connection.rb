@@ -145,11 +145,11 @@ module RR3036
 					tags << {:block_data => [], :block_security_flag => [], :dsfid => dsfid, :uid => uid}
 				end
 				if tags.empty?
-					continue
+					next
 				else
 					puts "Please select a tag:"
 					tag = tags[gets.strip.to_i]
-					continue if tag.nil?
+					next if tag.nil?
 				end
 
 				info = iso15693_tag_info(:data => tag[:uid])
